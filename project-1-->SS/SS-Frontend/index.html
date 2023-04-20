@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SimpleStorage DAPP</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+
+      #container {
+        width: 800px;
+        height: 800px;
+        border: 2px solid red;
+        border-radius: 20px;
+        margin: 50px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        background-color: aqua;
+      }
+      .btn {
+        width: 200px;
+        height: 50px;
+        border-radius: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Simple Data Storage BlockChain DApp</h1>
+    <div id="container">
+      <button id="connectBtn" class="btn">Connect</button>
+      <label for="FavNumber"
+        >Enter Your Favorite Number that youw ant to store....</label
+      >
+      <input
+        type="number"
+        id="getFav"
+        placeholder="Enter Your Favorite Number that youw ant to store...."
+      />
+      <button id="addNumber" class="btn">AddFavNumber</button>
+      <button id="getNumber" class="btn">GetFavNumber</button>
+      <div id="favNumIs"></div>
+
+      <label for="addPerson"
+        >Enter the Name and His/Her Favorite Number to store in array to later
+        access them using "Get Your Number"</label
+      >
+      <input id="addName" placeholder="Enter Name...." />
+      <input id="addFavNumber" placeholder="Enter Your Favorite Number...." />
+      <button id="nameToNum" class="btn">Add Your Favorite Number</button>
+
+      <label for="getFavNumber"
+        >Enter The Name Whose Favorite Number You want to fetch....</label
+      >
+      <input
+        id="getFavNumber"
+        placeholder="Enter The Name Whose Favorite Number You want to fetch...."
+      />
+      <button id="getNumberFromArray" class="btn">Get Your Number</button>
+      <div id="nameToNumVal"></div>
+    </div>
+    <script src="scripts/script.js" type="module"></script>
+  </body>
+</html>
